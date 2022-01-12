@@ -19,7 +19,7 @@ import developers from "assets/img/bundles/developers.png";
 import medal from "assets/img/bundles/medal.png";
 import purity from "assets/img/bundles/purity.png";
 import purityresponsive from "assets/img/bundles/purityresponsive.png";
-import sensualBg from "assets/img/bundles/sensual-background.png";
+// import sensualBg from "assets/img/bundles/sensual-background.png";
 import simmmpleFolder from "assets/img/bundles/simmmple-folder.png";
 import trophy from "assets/img/bundles/trophy.png";
 import uranus from "assets/img/bundles/uranus.png";
@@ -53,7 +53,7 @@ import {
   SimmmpleLogoBundle,
   WarningM,
 } from "components/icons/Icons";
-import Layout from "components/layout/Layout";
+// import Layout from "components/layout/Layout";
 import { HSeparator } from "components/separator/Separator";
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";

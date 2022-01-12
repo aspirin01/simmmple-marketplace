@@ -29,7 +29,7 @@ import {
 } from "components/icons/Icons";
 import Layout from "components/layout/Layout";
 import emailjs from "emailjs-com";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { Helmet } from "react-helmet";
 
@@ -95,52 +95,6 @@ const Contact = () => {
   const errorPartnerships = useRef();
   const errorOthers = useRef();
 
-  const handleGeneral = (e) => {
-    e.preventDefault();
-    if (general.name === "") {
-      e.target[0].style.border = "1px solid red";
-      errorGeneral.current.style.display = "flex";
-      e.target.children[0].children[1].lastChild.style.display = "block";
-      setTimeout(() => {
-        e.target[0].style.border = "1px solid rgb(226, 232, 240)";
-        errorGeneral.current.style.display = "none";
-        e.target.children[0].children[1].lastChild.style.display = "none";
-      }, 3000);
-    }
-    if (general.email === "") {
-      e.target[1].style.border = "1px solid red";
-      errorGeneral.current.style.display = "flex";
-      e.target.children[0].children[2].lastChild.style.display = "block";
-      setTimeout(() => {
-        e.target[1].style.border = "1px solid rgb(226, 232, 240)";
-        errorGeneral.current.style.display = "none";
-        e.target.children[0].children[2].lastChild.style.display = "none";
-      }, 3000);
-    }
-    if (general.message === "") {
-      e.target[2].style.border = "1px solid red";
-      errorGeneral.current.style.display = "flex";
-      e.target.children[0].children[3].lastChild.style.display = "block";
-      setTimeout(() => {
-        e.target[2].style.border = "1px solid rgb(226, 232, 240)";
-        errorGeneral.current.style.display = "none";
-        e.target.children[0].children[3].lastChild.style.display = "none";
-      }, 3000);
-    } else {
-      e.target[0].value = "";
-      e.target[1].value = "";
-      e.target[2].value = "";
-      setGeneral({
-        name: "",
-        email: "",
-        message: "",
-      });
-      setGeneralSubmission({
-        form: false,
-        submission: true,
-      });
-    }
-  };
 
   const sendEmailGeneral = (e) => {
     e.preventDefault();

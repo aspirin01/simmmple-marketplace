@@ -20,7 +20,7 @@ import fredy from "assets/img/about/fredy-simmmple.png"
 // Custom Components
 import Card from "components/card/Card";
 import CardBody from "components/card/CardBody";
-import React, { useEffect } from "react";
+import React from "react";
 import Layout from "components/layout/Layout";
 import { Helmet } from "react-helmet";
 

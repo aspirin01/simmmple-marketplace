@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import {
   Flex,
@@ -27,9 +27,6 @@ import {
   LeftButtonEffect,
   RightButtonEffect,
   SimmmpleLogoBundle,
-  ArticleIcon1,
-  ArticleIcon2,
-  ArticleIcon3,
   SearchIcon,
 } from "components/icons/Icons";
 import { MdKeyboardArrowRight } from "react-icons/md";

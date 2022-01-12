@@ -677,8 +677,7 @@ const Product = (props) => {
                     _active={{ bg: "#1A05B7" }}
                     w='100%'
                     h='60px'
-                    mb='14px'
-                    _hover={{ bg: "#1A05B7" }}>
+                    mb='14px'>
                     <Text color='#fff' fontSize='sm'>
                       Download For Free
                     </Text>
@@ -740,9 +739,7 @@ const Product = (props) => {
                     h='60px'
                     _hover={{ bg: "#1A05B7" }}
                     _active={{ bg: "#1A05B7" }}
-                    w='100%'
-                    h='60px'
-                    _hover={{ bg: "#1A05B7" }}>
+                    >
                     <Text color='#fff' fontSize='sm'>
                       Buy it Now!
                     </Text>

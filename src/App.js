@@ -6,7 +6,7 @@ import ScrollToTop from "components/scroll/ScrollToTop";
 import theme from "./theme/theme";
 
 function App() {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const {  toggleColorMode } = useColorMode();
   setTimeout(() => toggleColorMode, 50);
   return (
     <ChakraProvider theme={theme}>
